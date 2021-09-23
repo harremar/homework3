@@ -1,0 +1,153 @@
+.contact {
+  max-width: 80%;
+  min-height: 800px;
+  margin: 0 auto 40px auto;
+
+  &__bottomimage {
+    width: 1000px;
+    height: 320px;
+    margin: 0 auto;
+    // background-color: hotpink;
+    background-image: url(../images/animals2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  //CONTACT TITLE
+  &__title {
+    max-width: 100%;
+    min-height: 100px;
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-family: quicksandB;
+      padding-top: 40px;
+      color: $site-purple;
+    }
+  }
+
+  //CONTACT SUBTITLE
+  &__subtitle {
+    max-width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $site-purple;
+
+    p {
+      font-family: quicksandR;
+      font-size: 16px;
+    }
+  }
+
+  //CONTACT NAME, PHONE, EMAIL INFO
+  &__form {
+    max-width: 500px;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    h2 {
+      font-family: quicksandR;
+      font-size: 20px;
+      width: 200px;
+      color: $site-purple;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 60px;
+      border: $site-pink 3px solid;
+      padding-top: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      outline: none;
+      padding-left: 0.5rem;
+    }
+    input::placeholder {
+      color: rgb(192, 191, 191);
+    }
+  }
+
+  //CONTACT MESSAGE INFO
+  &__message {
+    max-width: 500px;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    h2 {
+      font-family: quicksandR;
+      font-size: 20px;
+      width: 200px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 150px;
+      border: $site-pink 3px solid;
+      padding-top: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      outline: none;
+      padding-left: 0.5rem;
+      //   padding-left: 20px;
+    }
+    input::placeholder {
+      color: rgb(192, 191, 191);
+    }
+  }
+
+  //CONTACT SUBMIT BUTTON
+  &__button {
+    width: 150px;
+    margin: 40px auto 100px auto;
+    height: 50px;
+    background-color: $site-purple;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 1s, ease 0.5s;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: quicksandR;
+      font-size: 18px;
+      transition: all 1s, ease 0.5s;
+    }
+  }
+
+  //WHEN HOVER CHANGES COLOR OR FONT SIZE
+  &__button:hover {
+    background-color: #2b2f3d;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__message {
+    width: 350px;
+    input {
+      width: 80%;
+    }
+  }
+  .contact__form {
+    width: 350px;
+    input {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .contact__bottomimage {
+    background-image: none;
+    height: 10px;
+  }
+}

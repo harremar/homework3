@@ -1,0 +1,118 @@
+.about {
+  width: 100%;
+  min-height: 800px;
+  //   background-color: antiquewhite;
+
+  &__title {
+    width: 100%;
+    min-height: 300px;
+    background-color: $site-purple;
+    text-align: center;
+    padding-top: 100px;
+
+    h1 {
+      font-size: 40px;
+      font-family: quicksandB;
+      color: $site-white;
+    }
+    &__btn {
+      width: 120px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: $site-white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+        color: $site-purple;
+        font-family: quicksandR;
+        font-size: 16px;
+      }
+    }
+    &__btn:hover {
+      background-color: rgb(228, 228, 228);
+      a:hover {
+        font-family: quicksandR;
+      }
+    }
+  }
+
+  &__bearcamp {
+    width: 100%;
+    min-height: 400px;
+    // background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &__text {
+      width: 600px;
+      min-height: 300px;
+      //   background-color: aquamarine;
+      padding: 20px;
+      h1 {
+        font-family: quicksandB;
+        font-size: 30px;
+        color: $site-purple;
+      }
+      p {
+        font-family: quicksandR;
+        font-size: 18px;
+        color: $site-black;
+      }
+    }
+    &__image {
+      width: 400px;
+      min-height: 300px;
+      background-color: blueviolet;
+      &--camp1 {
+        width: 400px;
+        min-height: 300px;
+        background-image: url(../images/camp1.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &--camp2 {
+        width: 400px;
+        min-height: 300px;
+        background-image: url(../images/camp2.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  &__bottomimage {
+    width: 1000px;
+    height: 300px;
+    margin: 40px auto 0 auto;
+    // background-color: hotpink;
+    background-image: url(../images/animals1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1150px) {
+  .about__bearcamp {
+    flex-direction: column;
+    min-height: 100vh;
+    // background-color: aqua;
+
+    &__image {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    &__text {
+      padding: 30px;
+    }
+  }
+  .about__bottomimage {
+    background-image: none;
+    height: 10px;
+  }
+}

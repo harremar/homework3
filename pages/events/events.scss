@@ -1,0 +1,121 @@
+.event {
+  width: 100%;
+  min-height: 700px;
+  //   background-color: antiquewhite;
+
+  &__title {
+    // width: 400px;
+    min-height: 100px;
+    padding-top: 30px;
+
+    h1 {
+      font-size: 40px;
+      font-family: quicksandB;
+      color: $site-purple;
+      text-align: center;
+    }
+  }
+
+  .event-content {
+    max-width: 800px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 40px;
+    &__rightside {
+      max-width: 800px;
+      min-height: 500px;
+      //   background-color: aquamarine;
+
+      &__image {
+        max-width: 800px;
+        min-height: 300px;
+        background-color: cadetblue;
+        border-radius: 20px;
+        &--friend {
+          max-width: 800px;
+          min-height: 300px;
+          background-color: cadetblue;
+          border-radius: 20px;
+          background-image: url(../images/friend.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &--hiking {
+          max-width: 800px;
+          min-height: 300px;
+          background-color: cadetblue;
+          border-radius: 20px;
+          background-image: url(../images/hiking.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &--canoe {
+          max-width: 800px;
+          min-height: 300px;
+          background-color: cadetblue;
+          border-radius: 20px;
+          background-image: url(../images/canoe.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      &__text {
+        max-width: 800px;
+        min-height: 200px;
+        padding: 20px 0 20px 0;
+        h4 {
+          font-family: quicksandB;
+          font-size: 24px;
+          color: $site-purple;
+        }
+        p {
+          font-family: quicksandR;
+          font-size: 16px;
+          color: $site-black;
+        }
+        &__btn {
+          width: 120px;
+          height: 50px;
+          border-radius: 5px;
+          background-color: $site-purple;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          a {
+            text-decoration: none;
+            color: $site-white;
+            font-family: quicksandR;
+            font-size: 16px;
+          }
+        }
+        &__btn:hover {
+          background-color: #2b2f3d;
+          a:hover {
+            font-family: quicksandR;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .event-content {
+    flex-direction: column;
+    min-height: 600px;
+    width: 80%;
+    &__date {
+      margin: 0 auto;
+    }
+  }
+}

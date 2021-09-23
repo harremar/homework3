@@ -1,0 +1,116 @@
+.home {
+  width: 100%;
+  min-height: 1000px;
+
+  &--hero {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/hero.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__content {
+    width: 100%;
+    min-height: 500px;
+    // background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &--color {
+      background-color: rgb(240, 240, 240);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    &__image {
+      width: 400px;
+      min-height: 400px;
+      // background-color: seagreen;
+      &--bear {
+        width: 400px;
+        min-height: 400px;
+        background-image: url(../images/bear.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &--cat {
+        width: 400px;
+        min-height: 400px;
+        background-image: url(../images/cat.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &--sloth {
+        width: 400px;
+        min-height: 400px;
+        background-image: url(../images/sloth.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    &__text {
+      max-width: 600px;
+      min-height: 400px;
+      padding-top: 50px;
+      // background-color: azure;
+      p {
+        font-size: 18px;
+        font-family: quicksandR;
+        color: $site-black;
+      }
+      &__title {
+        width: 100%;
+        min-height: 50px;
+
+        h1 {
+          max-width: 500px;
+          min-height: 50px;
+          // margin: 30px auto;
+          font-size: 30px;
+          font-family: quicksandB;
+          color: $site-purple;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home__title h1 {
+    font-size: 30px;
+    // margin: 0 auto;
+    text-align: center;
+    // background-color: springgreen;
+  }
+  .home__content {
+    flex-direction: column;
+    min-height: 100vh;
+    // background-color: aqua;
+
+    &__image {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    &__text {
+      padding: 30px;
+    }
+  }
+  .home__content--color {
+    flex-direction: column;
+    min-height: 100vh;
+    // background-color: aqua;
+
+    &__image {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    &__text {
+      padding: 30px;
+    }
+  }
+}
