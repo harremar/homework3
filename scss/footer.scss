@@ -7,7 +7,7 @@
   width: 80%;
   height: 40vh;
   // background-color: #213329;
-  color: $site-black;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -25,7 +25,7 @@
     font-family: quicksandR;
   }
   a {
-    color: $site-black;
+    color: #000;
     text-decoration: none;
     margin-bottom: 10px;
     font-family: quicksandR;
@@ -52,7 +52,7 @@
   background-color: rgb(240, 240, 240);
 }
 #footer-email::placeholder {
-  color: $site-black;
+  color: #000;
   font-family: quicksandR;
 }
 #footer-email-btn {
@@ -74,8 +74,14 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .footer-container {
+    // bacground-color: #213329;
+    // padding-bottom: 400px;
+    min-height: 800px;
+  }
   .footer {
     height: 50vh;
+    // padding-bottom: 400px;
   }
   .footer-email-form {
     margin-top: 4rem;

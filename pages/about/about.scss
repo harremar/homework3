@@ -101,6 +101,7 @@
   .about__bearcamp {
     flex-direction: column;
     min-height: 100vh;
+    max-width: 500px;
     // background-color: aqua;
 
     &__image {
@@ -108,12 +109,19 @@
       margin: 20px auto;
     }
     &__text {
-      // max-width: 400px;
-      padding: 30px;
+      max-width: 300px;
+      padding: 15px;
+      p {
+        font-size: 16px;
+      }
     }
   }
   .about__bottomimage {
     background-image: none;
     height: 10px;
+  }
+
+  .about__title {
+    height: 370px;
   }
 }

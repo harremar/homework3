@@ -153,7 +153,7 @@ nav .links__btn:hover a:hover {
 .footer {
   width: 80%;
   height: 40vh;
-  color: #404041;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ nav .links__btn:hover a:hover {
   font-family: quicksandR;
 }
 .footer-heading a {
-  color: #404041;
+  color: #000;
   text-decoration: none;
   margin-bottom: 10px;
   font-family: quicksandR;
@@ -212,27 +212,27 @@ nav .links__btn:hover a:hover {
 }
 
 #footer-email::-webkit-input-placeholder {
-  color: #404041;
+  color: #000;
   font-family: quicksandR;
 }
 
 #footer-email::-moz-placeholder {
-  color: #404041;
+  color: #000;
   font-family: quicksandR;
 }
 
 #footer-email:-ms-input-placeholder {
-  color: #404041;
+  color: #000;
   font-family: quicksandR;
 }
 
 #footer-email::-ms-input-placeholder {
-  color: #404041;
+  color: #000;
   font-family: quicksandR;
 }
 
 #footer-email::placeholder {
-  color: #404041;
+  color: #000;
   font-family: quicksandR;
 }
 
@@ -256,6 +256,10 @@ nav .links__btn:hover a:hover {
 }
 
 @media screen and (max-width: 1150px) {
+  .footer-container {
+    min-height: 800px;
+  }
+
   .footer {
     height: 50vh;
   }
@@ -709,6 +713,10 @@ nav .links__btn:hover a:hover {
   .blog-content__date {
     margin: 0 auto 20px auto;
   }
+
+  .blog__title h1 {
+    font-size: 24px;
+  }
 }
 .event {
   width: 100%;
@@ -834,6 +842,10 @@ nav .links__btn:hover a:hover {
   .event-content__date {
     margin: 0 auto;
   }
+
+  .event__title h1 {
+    font-size: 24px;
+  }
 }
 .about {
   width: 100%;
@@ -945,17 +957,26 @@ nav .links__btn:hover a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 100vh;
+    max-width: 500px;
   }
   .about__bearcamp__image {
     max-width: 500px;
     margin: 20px auto;
   }
   .about__bearcamp__text {
-    padding: 30px;
+    max-width: 300px;
+    padding: 15px;
+  }
+  .about__bearcamp__text p {
+    font-size: 16px;
   }
 
   .about__bottomimage {
     background-image: none;
     height: 10px;
+  }
+
+  .about__title {
+    height: 370px;
   }
 }
