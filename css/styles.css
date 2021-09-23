@@ -893,7 +893,7 @@ nav .links__btn:hover a:hover {
           justify-content: space-evenly;
 }
 .about__bearcamp__text {
-  width: 600px;
+  max-width: 600px;
   min-height: 300px;
   padding: 20px;
 }
@@ -951,6 +951,7 @@ nav .links__btn:hover a:hover {
     margin: 20px auto;
   }
   .about__bearcamp__text {
+    max-width: 400px;
     padding: 30px;
   }
 
